@@ -1,7 +1,4 @@
-from django.shortcuts import render
 
-# Create your views here.
-# tweets/views.py
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView
 from django.urls import reverse
