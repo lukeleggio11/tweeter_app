@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'bootstrap4', # new
+    'bootstrap4',
+    'bootstrap_datepicker_plus' # new
 
     'users',
     'tweets',
@@ -122,6 +123,10 @@ USE_L10N = True
 
 USE_TZ = True
 
+BOOTSTRAP4 = { 'include_jquery': True }
+
+LOGIN_REDIRECT_URL = 'home' # new
+LOGOUT_REDIRECT_URL = 'home' # new
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
