@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'allauth.account', # new
     'allauth.socialaccount', # new
     'rest_auth',
-    'rest_auth.registration'
+    'rest_auth.registration',
     'bootstrap4',
     'bootstrap_datepicker_plus', # new
 
@@ -146,7 +146,7 @@ BOOTSTRAP4 = { 'include_jquery': True }
 LOGIN_REDIRECT_URL = 'home' # new
 LOGOUT_REDIRECT_URL = 'home' # new
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # new
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.sendgrid.net' # new
 EMAIL_HOST_USER = os.getenv('SENDGRID_USER') # new
 EMAIL_HOST_PASSWORD = os.getenv('SENDGRID_PASSWORD') # new
