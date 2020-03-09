@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'bootstrap4',
-    'bootstrap_datepicker_plus' # new
+    'bootstrap_datepicker_plus', # new
 
     'users',
     'tweets',
